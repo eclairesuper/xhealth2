@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xhealth</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "9dd59b67-fc3f-4962-9c6f-28f0b062fdf3",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
+</head>
+<body>
+    <center>
+        <h1>Welcome to Xhealth2</h1>
+    </center>
+    <div>
+        
+            <ul>
+                <button class="pure-material-button-contained" onclick=" alwaysat()">
+                    Home  
+                </button>
+            </ul>
+            <ul>
+                <button class="pure-material-button-contained" onclick="window.location.href='./sports.html'">
+                    Sports 
+                </button>
+            </ul>
+            <ul>
+                <button class="pure-material-button-contained" onclick="window.location.href='./stats.html'">
+                    Stats
+                </button>
+            </ul>
+            <ul>
+                <button class="pure-material-button-contained" onclick="window.location.href='./about-us.html'">About Us</button>
+            </ul>
+            <ul>
+                <button class="pure-material-button-contained" onclick="window.location.href='./eat.html'">Eat What ?</button>
+            </ul>
+            <center class="choose">
+                <h3>Choose something to do at your left !</h3>
+            </center>
+    </div>
+    <!-- weather widget start --><a target="_blank"><img src="https://w.bookcdn.com/weather/picture/32_30575_1_1_3658db_250_2a48ba_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=569&anc_id=5308" style="border-radius: 15px;"></a><!-- weather widget end -->
+</body>
+</html>
+<script>
+    function alwaysat() {
+        console.log("You can change the page error 1")
+        //error 1 = you can change the page
+        alert("You are already to the home page you can go to because you are already on !")
+        
+    }
+</script>
+<style>
+    body {
+    background-image: url(material-back.webp);
+    background-size: 100%;
+}
+a{
+    top: 18%;
+    left: 45%;
+    position: absolute;
+}
+.choose{
+    top: 5%;
+    position: absolute;
+    left: 40%;
+}
+</style>

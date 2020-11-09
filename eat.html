@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://localhost:5000/index2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On mange quoi ?</title>
+    <link rel="shortcut icon" href="http://localhost:5000/LogoMakr_2Sum3f.png" type="image/x-icon">
+</head>
+<body>
+    <!--The center tags are important because i want to show all the elements to the center of the page-->
+    <!--All the tags doesn't have a class or a id because i don'y want to identify all the element.-->
+    <center>
+    <h1>
+        On mange quoi ? 
+    </h1>
+    <p>
+        <button onclick="gentextdej();">On mange quoi pour le déjeuner ?</button>
+        <button onclick="gentextesnack()">On mange quoi pour la collation ?</button>
+        <button onclick="gentextlunch()">On mange quoi pour le diner ?</button>
+        <button onclick="gentext();">On mange quoi pour le souper ?</button>
+        <button onclick="window.location.href='https://www.ubereats.com/ca'">Commander un repas</button>
+    </p>
+    <h2></h2>
+    <p1>Ce site à été conçu pour vous donnez des idées</p1>
+    <p2>lorsque vous ne savez pas quoi manger pour n'importe quel repas ou collation.</p2>
+        <p>Je suis sur que vous aimerez mon application!</p>
+    </center>
+<script>
+    function gentext() {
+        var word=['Poulet!','pizza!','poulet curcuma!','tomawak!','riz chinois!','chopsuey!','omelette!','tempe!','boulette asiatiques!','sole!','saumon!','burger!','salade chèvre chaud!','lasagne!','spagetthi!','soupe!','sous-marin!','poulet général thao!','fondue!',
+        'raclette!','fajita!','tacos!','quesadillas!','cury au lentilles!','sauté au boeuf!','chili avec viande',]
+    var para=document.querySelector('h2');
+    para.innerHTML=word[Math.floor(Math.random()*word.length)];
+    }
+    function gentextdej() {
+        var word=['Toast','oeuf','gruau','crèpe','avec un smoothie','muffin anglais','bagel','pain doré','oeuf avec bacon']
+    var para=document.querySelector('h2');
+    para.innerHTML=word[Math.floor(Math.random()*word.length)];
+    }
+    function gentextesnack() {
+        var word=['Fruit (au choix)','légumes (crudités)','galletes','biscuit','smoothie']
+    var para=document.querySelector('h2');
+    para.innerHTML=word[Math.floor(Math.random()*word.length)];
+    }
+    function gentextlunch() {
+        var word=['salade','soupe won-ton','sandwich','craft dinner','soupe au poulet','soupe (celle qui vous tente)','hot-dog','hamburger','salade au thon','salade tex-mex']
+    var para=document.querySelector('h2');
+    para.innerHTML=word[Math.floor(Math.random()*word.length)];
+    }
+    </script><iframe style="border: 0 none;height: 0;margin: 0;padding: 0;position: absolute;visibility: hidden;width: 0;" src="./index2_files/saved_resource.html"></iframe>
+    <center>
+    Nouvelle idée ?
+    <input type="button" onclick=window.location.href="./form.html" value="Proposez la ici!">
+    <p>
+    <input type="button" onclick=window.location.href="./recettes.html" value="voir toutes les recettes">
+    <input type="button" onclick="window.location.href='./abbon-notifications.html'" value="S'abonner au notifications">
+    </p>
+    <p><button onclick="window.location.href='./section-memer.html'">Section Memer</button> <button>Section sans viande</button></p>
+    <p>
+    </center>
+    <input style="bottom: 0.5cm; position: absolute; left: 3cm;" type="button" onclick=window.location.href="./index1.html" value="Retourner a la page de connexion">
+    <input style="bottom: 0.5cm; position: absolute; right: 4cm;" type="button" onClick="window.location.href='./goodbye.html'",  value="exit ==>>"/>
+    <style>
+        body {
+            background-image: url(back-2.jpg);
+            color: cornsilk;
+            background-size: 100%;
+        }
+        h3 {
+            position: fixed;
+            top: 18cm;
+            left: 1cm;
+        }
+
+        button {
+   color: #1D9AF2;
+   background-color: #ffffff;
+   border: 1px solid #1D9AF2;
+   border-radius: 20px;
+   padding: 0 15px;
+   cursor: pointer;
+   height: 32px;
+   font-size: 14px;
+   transition: all 0.2s ease-in-out;
+}
+button:hover {
+  box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+  transform: translateX(-3px);
+}
+input {
+   color: #1D9AF2;
+   background-color: #ffffff;
+   border: 1px solid #1D9AF2;
+   border-radius: 20px;
+   padding: 0 15px;
+   cursor: pointer;
+   height: 32px;
+   font-size: 14px;
+   transition: all 0.2s ease-in-out;
+}
+input:hover {
+  box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+  transform: translateX(-3px);
+}
+    </style>
+    <footer>
+        <input style="bottom: 0.5cm; position: absolute;" type="button" onclick=window.location.href="./about.html" value="À propos">
+    </footer>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="./index2_files/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="./index2_files/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA_DTvNcgHYzLmRBe2DbW4tOI_BfigmOA0",
+    authDomain: "ont-mange-quoi.firebaseapp.com",
+    databaseURL: "https://ont-mange-quoi.firebaseio.com",
+    projectId: "ont-mange-quoi",
+    storageBucket: "ont-mange-quoi.appspot.com",
+    messagingSenderId: "565226457607",
+    appId: "1:565226457607:web:f23e703340114db2beb8a2",
+    measurementId: "G-T9QWLVEL9Z"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<!-- Ne pas supprimer le script precdent il sert a firebase analytics car il est la avec oribi-->
+<script>
+    function goodbye() {
+    location.href=('./goodbye.html')
+   //This is a little program to open a tab with a script for the programm can close the goodbye tab
+    } 
+   </script>
+   <!--Le script de one signal entre les balises head est celui de one signal pour envoyer des notifications aux utilisateurs !-->
+   <!--Le script suivant est celui de dialogflow il se peut quil entre en conflit avec celui de onsignal-->
+   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="31024158-4175-4073-9067-a75b1eedd0d4_x.png"
+  intent="WELCOME"
+  chat-title="Hi-eats"
+  agent-id="86a32b74-11e9-4227-88d1-c93b3d9d890a"
+  language-code="fr"
+></df-messenger>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+  function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+</script>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+  //This is the sign ou scrpt of the user
+  //Test modification from github to visual studio and local folder
+</script>
